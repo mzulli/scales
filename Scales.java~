@@ -1,0 +1,49 @@
+public class Scales {
+  public static void main (String[] args) {
+    // create an array to hold notes
+    String[][] aryNotes = new String[3][13];
+    
+    // populate array (sharps)
+    aryNotes[0][0] = "sharps";
+    aryNotes[0][1] = "C";
+    aryNotes[0][2] = "C#";
+    aryNotes[0][3] = "D";
+    aryNotes[0][4] = "D#";
+    aryNotes[0][5] = "E";
+    aryNotes[0][6] = "F";
+    aryNotes[0][7] = "F#";
+    aryNotes[0][8] = "G";
+    aryNotes[0][9] = "G#";
+    aryNotes[0][10] = "A";
+    aryNotes[0][11] = "A#";
+    aryNotes[0][12] = "B";
+    
+    // populate array (flats)
+    aryNotes[1][0] = "flats";
+    aryNotes[1][1] = "C";
+    aryNotes[1][2] = "Db";
+    aryNotes[1][3] = "D";
+    aryNotes[1][4] = "Eb";
+    aryNotes[1][5] = "E";
+    aryNotes[1][6] = "F";
+    aryNotes[1][7] = "Gb";
+    aryNotes[1][8] = "G";
+    aryNotes[1][9] = "Ab";
+    aryNotes[1][10] = "A";
+    aryNotes[1][11] = "Bb";
+    aryNotes[1][12] = "B";
+    
+    //print chromatic scale starting on C
+    int columns = 13;
+    
+    int i;
+    
+    for (i = 1; i < columns; i++) {
+      System.out.print(aryNotes[0][i] + " ");
+    }
+    for (i=(columns - 2); i > 0; i--) {
+      System.out.print(aryNotes[1][i] + " ");
+    }
+    System.out.println();
+  }
+}
