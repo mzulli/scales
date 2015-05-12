@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Scale()
+comment1.params=
+comment1.target=void\ printArray()
+comment2.params=
+comment2.target=void\ setStartNote()
+comment3.params=target
+comment3.target=void\ setTonic(java.lang.String)
+comment4.params=
+comment4.target=void\ printTonic()
+comment5.params=
+comment5.target=void\ printChromatic()
+comment6.params=
+comment6.target=void\ printMajor()
+numComments=7
