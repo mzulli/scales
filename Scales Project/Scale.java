@@ -1,3 +1,5 @@
+package com.mzulli.scales;
+
 import java.util.Scanner;
 
 public class Scale {
@@ -28,7 +30,7 @@ public class Scale {
         }
     }
 
-    //print full array of notes
+    //print the full array with pointers converted to notes
     public void printArray() {
         for (int i = 0; i < rows; i++){
             for (int j = 0; j < cols; j++){
@@ -65,7 +67,7 @@ public class Scale {
     }
     
 
-    //set start note
+    //ask the user for the starting note and set it as the tonic
     public void setStartNote() {
         //prompt user for starting note
         Scanner inputStart = new Scanner(System.in);
@@ -86,7 +88,12 @@ public class Scale {
         setTonic(startNote.substring(0,1).toUpperCase() + startNote.substring(1));
     }
     
-    //set tonic
+    //get start note
+    public String getStartNote() {
+      return startNote;
+    }
+    
+    //convert the user's input to a Note with a row and col index
     public void setTonic(String target) {
         int i = 0;
         int j = 0;
@@ -109,7 +116,13 @@ public class Scale {
                 }
             }
         }
+        
+        //create the Note
+        Note tonic = new Note(i, j);
     }
+    
+//    //get tonic
+//    public 
     
     //print tonic
     public void printTonic() {
