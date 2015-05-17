@@ -9,7 +9,6 @@ public class Scale {
     private int tonicRow = 0;
     private int tonicCol = 0;
     private String startNote;
-    private Note tonic;
   
     public Scale() {
         notes = new String[rows][cols];
@@ -96,7 +95,6 @@ public class Scale {
       return startNote;
     }
     
-    //set the tonic
     //convert the user's starting note to a Note with a row and col index
     public void setTonic(String target) {
         int i = 0;
@@ -121,12 +119,12 @@ public class Scale {
             }
         }
         
-        tonic = new Note(tonicRow, tonicCol);
+        //create the Note
+        Note tonic = new Note(i, j);
     }
     
-    //get tonic from Note class
+    //get tonic
     public Note getTonic() {
-      tonic.getNote();
       return tonic;
     }
     
