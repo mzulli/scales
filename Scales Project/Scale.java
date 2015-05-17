@@ -84,8 +84,10 @@ public class Scale {
             inputStart.close();
         } 
         
-        //clean up startNote and pass to setTonic
-        setTonic(startNote.substring(0,1).toUpperCase() + startNote.substring(1));
+        //capitalize the first character of the user's starting note,
+        //lowercase the second,
+        //pass to setTonic
+        setTonic(startNote.substring(0,1).toUpperCase() + startNote.substring(1).toLowerCase());
     }
     
     //get start note
@@ -93,7 +95,7 @@ public class Scale {
       return startNote;
     }
     
-    //convert the user's input to a Note with a row and col index
+    //convert the user's starting note to a Note with a row and col index
     public void setTonic(String target) {
         int i = 0;
         int j = 0;
@@ -121,8 +123,10 @@ public class Scale {
         Note tonic = new Note(i, j);
     }
     
-//    //get tonic
-//    public 
+    //get tonic
+    public Note getTonic() {
+      return tonic;
+    }
     
     //print tonic
     public void printTonic() {
