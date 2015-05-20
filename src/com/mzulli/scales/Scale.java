@@ -129,10 +129,19 @@ public class Scale {
       tonic.getNote();
       return tonic;
     }
+
+    //HERE 2015.05.20
+    //get tonic row from Note
+    public int getTonicRow() {
+      tonic.getRow();
+      return
+    }
     
     //print tonic
     public void printTonic() {
-        System.out.println("Your starting note, " + startNote.substring(0,1).toUpperCase() + startNote.substring(1) 
+      
+      //System.out.println("Your starting note, " + startNote.substring(0,1).toUpperCase() + startNote.substring(1) 
+      System.out.println("Your starting note, " + tonic 
                            + ", was found in row " + tonicRow + ", column " + tonicCol + ".");
     }
     

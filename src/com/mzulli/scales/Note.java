@@ -16,4 +16,12 @@ public class Note {
   public Note getNote() {
     return myNote;
   }  
+  
+  public int getRow() {
+    return noteRow;
+  }
+  
+  public int getCol() {
+    return noteCol;
+  }
 }
